@@ -1,6 +1,6 @@
 # DWMProject
 
-### Comparison of Python vs R Agglomerative Clustering Results
+### 1. Comparison of Python vs R Agglomerative Clustering Results
 
 | Python Cluster | Python Count | R Cluster | R Count |
 |----------------|--------------|-----------|---------|
