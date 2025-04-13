@@ -9,6 +9,8 @@
 | 2              | ~900         | 3         | ~2700   |
 | 3              | ~2700        | 4         | ~400    |
 
+---
+
 **Observations**:
 
 - *Primary Clusters:* Both implementations identify a dominant cluster, but Python's largest cluster (0) contains ~5000 samples while R's largest (1) has ~4400.
