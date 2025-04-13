@@ -20,3 +20,28 @@
 - *Balance:* R's implementation produces more evenly distributed clusters overall, while Python's shows more extreme concentration in the largest cluster.
 
 These differences highlight how implementation details can significantly impact agglomerative hierarchical clustering results despite using conceptually similar algorithms.
+
+
+### 2. Spam Email Classification Model Performance Comparison: Python vs R
+
+| Metric      | SVM (Python) | SVM (R)     | Random Forest (Python) | Random Forest (R) |
+|-------------|--------------|-------------|--------------------------|--------------------|
+| Accuracy    | 98.91%       | 50.00%      | 99.02%                   | 98.60%             |
+| Precision   | 99.68%       | 50.00%      | 99.89%                   | 99.79%             |
+| Recall      | 98.13%       | 100.00%     | 98.13%                   | 97.41%             |
+| F1 Score    | 98.90%       | 66.67%      | 99.01%                   | 98.58%             |
+
+---
+
+**Observations**:
+
+*Random Forest*:
+- Consistently performs well in both environments.
+- Slight differences are expected due to implementation nuances between `sklearn` (Python) and `randomForest` (R).
+- Very high precision and recall, indicating robustness in detecting both spam and ham messages.
+
+*SVM Performance*:
+- SVM performance in R is significantly worse (accuracy = 50%, precision = 50%), suggesting:
+  - Possible issue with **text preprocessing** or **feature alignment**.
+  - Potential model **underfitting** due to improper weighting, kernel choice, or missing text normalization.
+
